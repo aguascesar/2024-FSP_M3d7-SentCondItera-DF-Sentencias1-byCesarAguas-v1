@@ -1,6 +1,6 @@
-# * my_imc v1 (https://github.com/...//)
+# * my_imc v1 (https://github.com/aguascesar/2024-FSP_M3d7-SentCondItera-DF-Sentencias1-byCesarAguas-v1)
 # * Copyright 2024 Cesar Aguas
-# * Licensed under AGPL3.0 (https://github.com/.../LICENSE)
+# * Licensed under AGPL3.0 (https://github.com/aguascesar/2024-FSP_M3d7-SentCondItera-DF-Sentencias1-byCesarAguas-v1/LICENSE)
 #   
 #
 import sys 
