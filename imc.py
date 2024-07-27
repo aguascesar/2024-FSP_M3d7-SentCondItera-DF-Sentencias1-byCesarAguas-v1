@@ -36,25 +36,25 @@ def escala(imc):
         return "Obesidad Grado III"
 
 # Comenzando las rutinas
-if __name__ == "__main__":
-    # La cantidad de argumentos debe ser 2, = nombre_binario argumento_1 argumento_2
-    if len(sys.argv) != 3:
-        print("Por favor escriba: ./imc [kg] [cm]")
-        sys.exit(1)
 
-    try:
-        # Extraer argumentos
-        peso = float(sys.argv[1])
-        altura = float(sys.argv[2]) / 100
-    except Exception as e:
-        print("Error: ", e.message, e.args)
-        sys.exit(1)
+# La cantidad de argumentos debe ser 2, = nombre_binario argumento_1 argumento_2
+if len(sys.argv) != 3:
+    print("Por favor escriba: ./imc [kg] [cm]")
+    sys.exit(1)
 
-    # Realizar calculos
-    imc = indice(peso, altura)
-    oms = escala(imc)
+try:
+    # Extraer argumentos
+    peso = float(sys.argv[1])
+    altura = float(sys.argv[2]) / 100
+except Exception as e:
+    print("Error: ", e.message, e.args)
+    sys.exit(1)
 
-    print("Su IMC es:", imc)
-    print("La escala OMS es:", oms)
+# Realizar calculos
+imc = indice(peso, altura)
+oms = escala(imc)
+
+print("Su IMC es:", imc)
+print("La escala OMS es:", oms)
 
 
